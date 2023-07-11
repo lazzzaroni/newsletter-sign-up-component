@@ -23,7 +23,7 @@ export default function Container() {
       {!isSubmitted ? (
         <Form onSubmit={handleFormSubmit} />
       ) : (
-        <Success data={data} onClick={handleSuccessSubmit} />
+        <Success email={data} onClick={handleSuccessSubmit} />
       )}
     </>
   );
