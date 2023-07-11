@@ -6,7 +6,7 @@ await import("./src/env.mjs");
 
 /** @type {import("next").NextConfig} */
 const config = {
-    // basePath: "/newsletter-sign-up-component",
+  basePath: "/newsletter-sign-up-component",
   reactStrictMode: true,
 
   /**
