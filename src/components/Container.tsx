@@ -1,4 +1,12 @@
+import Image from "next/image";
+
 import { cn } from "@/lib/utils";
+
+const list = [
+  "Product discovery and building what matters",
+  "Measuring to ensure updates are a success",
+  "And much more!",
+];
 
 export default function Container() {
   return (
@@ -23,18 +31,51 @@ export default function Container() {
           </picture>
         </div>
       </div>
-      <div className="w-full lg:p-16">
-        <h1>Stay updated!</h1>{" "}
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters </li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+      <div
+        className={cn(
+          "w-full p-6 text-neutral-dark-slate-grey",
+          "lg:pl-16 lg:pr-10 lg:pt-20"
+        )}
+      >
+        <h1 className={cn("py-4 text-4xl font-semibold", "lg:text-6xl")}>
+          Stay updated!
+        </h1>
+        <p className="py-2">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul className="flex flex-col gap-2.5 py-4">
+          {list.map((item) => (
+            <li className="flex gap-4" key={item[0]}>
+              <Image
+                width={0}
+                height={0}
+                src="/icon-success.svg"
+                alt="Icon Success"
+                className={cn("h-5 w-5")}
+              />
+              {item}
+            </li>
+          ))}
         </ul>
-        <label htmlFor="">
-          Email address <input type="text" placeholder="email@company.com" />
-        </label>
-        <button>Subscribe to monthly newsletter</button>
+        <form className="pt-6">
+          <div>
+            <label htmlFor="mail" className="mb-2 block text-xs font-semibold">
+              Email address
+            </label>
+            <input
+              id="mail"
+              type="text"
+              placeholder="email@company.com"
+              className="block w-full rounded-lg border px-6 py-4"
+            />
+          </div>
+          <button
+            type="submit"
+            className="mt-6 w-full rounded-lg bg-neutral-dark-slate-grey py-4 font-normal text-white hover:bg-gradient-to-r hover:from-primary-tomato/80 hover:to-primary-tomato hover:drop-shadow-2xl focus:outline-none focus:ring-1 focus:ring-primary-tomato"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
       </div>
     </section>
   );
