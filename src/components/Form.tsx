@@ -38,10 +38,10 @@ export default function Form({ onSubmit }: { onSubmit: SubmitHandler<Mail> }) {
           <picture>
             <source
               media="(min-width:1024px)"
-              srcSet="/illustration-sign-up-desktop.svg"
+              srcSet="/newsletter-sign-up-component/illustration-sign-up-desktop.svg"
             />
             <img
-              src="/illustration-sign-up-mobile.svg"
+              src="/newsletter-sign-up-component/illustration-sign-up-mobile.svg"
               alt="Illustration"
               className="h-auto w-full"
             />
@@ -66,7 +66,7 @@ export default function Form({ onSubmit }: { onSubmit: SubmitHandler<Mail> }) {
               <Image
                 width={0}
                 height={0}
-                src="/icon-success.svg"
+                src="/newsletter-sign-up-component/icon-success.svg"
                 alt="Icon Success"
                 className={cn("h-5 w-5")}
               />

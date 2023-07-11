@@ -20,7 +20,7 @@ export default function Success({
         <Image
           width={0}
           height={0}
-          src="/icon-success.svg"
+          src="/newsletter-sign-up-component/icon-success.svg"
           alt="Icon Success"
           className="h-16 w-16"
         />
