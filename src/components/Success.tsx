@@ -21,7 +21,7 @@ export default function Success({
           width={0}
           height={0}
           src="/newsletter-sign-up-component/icon-success.svg"
-          alt="Icon Success"
+          alt=""
           className="h-16 w-16"
         />
         <h1

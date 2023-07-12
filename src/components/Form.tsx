@@ -67,7 +67,7 @@ export default function Form({ onSubmit }: { onSubmit: SubmitHandler<Mail> }) {
                 width={0}
                 height={0}
                 src="/newsletter-sign-up-component/icon-success.svg"
-                alt="Icon Success"
+                alt=""
                 className={cn("h-5 w-5")}
               />
               {item}
